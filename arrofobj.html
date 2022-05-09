@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Array Of Object</title>
+    </head>
+    <body>
+        <script>
+                const obj =[
+                           {firstName : "Sara", lastName : "Patel", age : 30, address : "Ahmedabad"},
+                           {firstName : "Meera", lastName : "Gupta", age : 25, address : "Surat"},
+                           {firstName : "Ramesh", lastName : "Joshi", age : 29, address : "Rajkot"}
+        ];
+                var text;
+                for (let key of obj)
+                {
+                    document.write(Object.entries(key) + "<br>");
+                }
+            </script>
+    </body>
+</html>
