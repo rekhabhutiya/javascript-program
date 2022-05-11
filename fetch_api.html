@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            Fetch Api Example
+        </title>
+        <body>
+            
+            <script>
+                 let txt = "";
+                fetch("https://jsonplaceholder.typicode.com/todos/")
+                .then(res => res.json())
+                .then(data => {
+                    for(var i =0 ; i < data.length; i++)
+                    {
+                        console.log(i);
+                        document.write(`${data[i].userId}, ${data[i].title}, ${data[i].completed}<br>`);
+                        //document.getElementById("disp").innerHTML= `${d[i].userId} <br> ${d[i].title} <br> ${d[i].completed}`;
+                    }
+                    })
+            </script>
+        </body>
+    </head>
+</html>
