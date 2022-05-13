@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Calculater</title>
+    </head>
+    <body>
+        <table>
+            <h1>Calculator</h1>
+            <tr>
+              <td>Enter a first number : </td>
+              <td><input type="text" id = "no1"  required /></td>
+            </tr>
+
+            <tr>
+              <td>Enter a second number : </td>
+              <td><input type="text" id = "no2" required /></td>
+            </tr>
+
+          </table>
+          <br/>
+
+          
+          <button onclick="add()">Add</button>
+          
+          <button onclick="sub()">Substract</button>
+          
+          <button onclick="mul()">Multiply</button>
+          
+          <button onclick="div()">Divide</button>
+
+          
+          <p id="result">Result</p>
+
+          <script>
+
+              function add()
+              {
+                    var no1 = document.getElementById("no1").value;
+		            var no2 = document.getElementById("no2").value;
+                    var ans = Number(no1) + Number(no2);
+                    document.getElementById("result").innerHTML = ans
+              }
+
+              function sub()
+              {
+                    var no1 = document.getElementById("no1").value;
+		            var no2 = document.getElementById("no2").value;
+                    var ans = Number(no1) - Number(no2);
+                    document.getElementById("result").innerHTML = ans
+              }
+
+              function mul()
+              {
+                    var no1 = document.getElementById("no1").value;
+		            var no2 = document.getElementById("no2").value;
+                    var ans = Number(no1) * Number(no2);
+                    document.getElementById("result").innerHTML = ans
+              }
+
+              function div()
+              {
+                    var no1 = document.getElementById("no1").value;
+		            var no2 = document.getElementById("no2").value;
+                    var ans = Number(no1) / Number(no2);
+                    document.getElementById("result").innerHTML = ans
+              }
+
+          </script>
+    </body>
+</html>

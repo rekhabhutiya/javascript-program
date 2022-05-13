@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Session Storage</title>
+    </head>
+    <body>
+        <script>
+            sessionStorage.setItem("firstName","Divya")
+            sessionStorage.setItem("lastName","Patel")
+            document.write(`FistName : ${sessionStorage.getItem("firstName")}<br> LastName : ${sessionStorage.getItem("lastName")}`)
+            //sessionStorage.removeItem('lastName'); --remove on item
+            //sessionStorage.clear() //remove all
+        </script>
+    </body>
+</html>

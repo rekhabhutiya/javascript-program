@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>
+            Auto Dropdown 
+        </title>
+    </head>
+    <body>
+        <select class="state" id="state" onchange="droValue(this)">
+            <option value="">--Select State--</option>
+            <option value="Gujrat">Gujrat</option>
+            <option value="Madthya Pradesh">Madthya Pradesh</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+        </select>
+        <span id="drop2"></span>
+        <script>
+            
+            function droValue(state)
+            {
+                var drp1 = document.getElementById("state").value
+                if(drp1 == 'Gujrat')
+                {
+                    var temp = `<select id='city'>
+                                    <option value='Surat'>Surat</option>
+                                    <option value='Ahmedabad'>Ahmedabad</option>
+                                    <option value='Rajkot'>Rajkot</option>
+                                    <option value='Vadodara'>Vadodara</option>
+                                </select>`
+                    document.getElementById('drop2').innerHTML = temp
+                }
+                else if(drp1 == 'Madthya Pradesh')
+                {
+                    var temp = `<select id='city'>
+                                    <option value='Indore'>Indore</option>
+                                    <option value='Bhopal'>Bhopal</option>
+                                    <option value='Jabalpur'>Jabalpur</option>
+                                    <option value='Gwalior'>Gwalior</option>
+                                </select>`
+                    document.getElementById('drop2').innerHTML = temp
+                }
+                else if(drp1 == 'Himachal Pradesh')
+                {
+                    var temp = `<select id='city'>
+                                    <option value='Shimla'>Shimla</option>
+                                    <option value='Dharamsala'>Dharamsala</option>
+                                    <option value='Solan'>Solan</option>
+                                    <option value='Mandi'>Mandi</option>
+                                </select>`
+                    document.getElementById('drop2').innerHTML = temp
+                }
+            }
+            
+        </script>
+    </body>
+</html>
